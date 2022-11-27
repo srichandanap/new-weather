@@ -1,12 +1,11 @@
 .places {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 24px;
   padding-top: 3rem;
-
 }
 
 .image {
@@ -16,7 +15,6 @@
   cursor: pointer;
   padding-top: 1.5rem;
   align-items: center;
-
 }
 
 .img {
@@ -37,23 +35,20 @@
   align-items: center;
   border-bottom: 1px solid rgb(255, 255, 255, 0.3);
   padding: 4rem 0rem 7rem 0rem;
-  gap: 2rem;
-
-
+  gap: 1rem;
 }
 .temp {
   display: flex;
   gap: 0.8rem;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .tempCount {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: Roboto;
   font-size: 64px;
   font-weight: 500;
   letter-spacing: 0;
-
 }
 
 /* .conversion {
@@ -63,25 +58,21 @@
   border-radius: 2px 0 0 2px;
 } */
 
-
 .favourite_mobile .places_mobile {
   display: none;
 }
 
 .switchImage {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
 }
 
-.switchTempature{
+.switchTempature {
   margin-bottom: 11px;
-
 }
 
 .react-switch-bg {
+  border: 1px solid white !important;
 
-    border: 1px solid white !important;
-
-    background-color: transparent !important;
-
+  background-color: transparent !important;
 }

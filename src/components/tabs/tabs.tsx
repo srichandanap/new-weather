@@ -42,7 +42,7 @@ const Tabs = () => {
   };
 
   return (
-    <div>
+    <div className='mainTab'>
       <div className="tabItems">
         <div className="tabs">
           <div className='tabLink'>

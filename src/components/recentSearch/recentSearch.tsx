@@ -8,12 +8,14 @@ const RecentSearch = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const recentData = JSON.parse(window.localStorage.getItem("data") || "[]");
-  const recentMobileData = JSON.parse(window.localStorage.getItem("data") || "[]");
 
+  // console.log(recentData);
 
-  const [elements, setElements] = useState(false)
+  // const [elements, setElements] = useState(false)
 
-  let icon = ''
+  // if weatherData!= [] && 
+
+  let icon = '';
   switch (
   recentData &&
   recentData.current_observation &&
@@ -60,7 +62,6 @@ const RecentSearch = () => {
       break
   }
 
-
   return (
     <>
       <div className="searchFavMobile">
@@ -76,7 +77,7 @@ const RecentSearch = () => {
         </div>
       </div>
 
-      {elements ?
+      {(recentData.length === 0) ?
         (<div className="favImage">
           <img src={require("../../assets/icon_nothing.png")} alt="image" />
           <div className="text">No Recent Search</div>
@@ -91,8 +92,10 @@ const RecentSearch = () => {
             </div>
             <div className="favPlaces">
               {recentData.reverse().map((data: any, i: any) => {
+
                 return (<>
                   {JSON.stringify(data.place) !== '[]' && <div className="favPlaceItem">
+
                     <div className="place">
                       {data && data.place}, {data && data.country}
                     </div>
@@ -117,6 +120,7 @@ const RecentSearch = () => {
               })}
 
               {recentData.map((data: any, i: any) => {
+
                 return (<>
                   {JSON.stringify(data.place) !== '[]' && <div className="favPlaceMobileItem">
 

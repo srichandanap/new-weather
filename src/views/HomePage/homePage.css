@@ -158,6 +158,7 @@
         width: 100vw !important;
         justify-content: space-between !important;
         align-items: center !important;
+        position: fixed;
 
     }
 
@@ -202,11 +203,11 @@
         flex-direction: column !important;
         gap: 2px!important;
     }
-
+    
     .temp {
         font-size: 18px !important;
         display: flex!important;
-        align-items: center!important;
+        align-items: flex-end!important;
     }
 
     .condition {
@@ -222,7 +223,7 @@
     }
 
     .favImage {
-        height: 75vh;
+        height: 91vh!important;
     }
 
 
@@ -380,6 +381,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.favPlaceList{
+    height: unset!important;
 }
 
 

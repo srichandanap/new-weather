@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-// import { NavLink, Route, Routes } from "react-router-dom";
 import './home.css';
+import { NavLink, Route, Routes } from "react-router-dom";
 import { useDispatch } from 'react-redux';
-// import { addTemperature } from '../redux/weatherSlice';
-// import { addText } from '../redux/weatherSlice';
 import { addWeather } from '../redux/weatherSlice'
 import axios from 'axios';
-// import { addPlace } from '../redux/weatherSlice'
 import { addWeatherData } from '../redux/weatherSlice';
+
 
 const Home = () => {
   const [search, setSearch] = useState('udupi');
@@ -18,24 +16,12 @@ const Home = () => {
   const [weather, setWeather] = useState([]);
   const dispatch = useDispatch();
 
-  // const [menuMobile, setMenuMobile] = useState(false)
-  // const [searchMobile, setSearchMobile] = useState(false)
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
     setSearch(e.target.search.value);
 
   }
-
-  // useEffect(() => {
-  //   dispatch(addPlace(place));
-  // }, [place]);
-  // // console.log(place, country, temperature, text);
-
-
-  // useEffect(() => {
-  //   dispatch(addCountry(country));
-  // }, [country]);
 
   useEffect(() => {
     dispatch(addWeatherData({
@@ -45,17 +31,6 @@ const Home = () => {
       text: text,
     }));
   }, [weather]);
-
-
-  // useEffect(() => {
-  //   dispatch(addTemperature(temperature));
-  // }, [temperature]);
-
-  // useEffect(() => {
-  //   dispatch(addText(text));
-  // }, [text]);
-
-
 
   const options = {
     method: 'GET',
@@ -85,7 +60,7 @@ const Home = () => {
         console.log(data);
         setPlace(data && data.location && data.location.city && data.location.city);
         setCountry(data && data.location && data.location.country && data.location.country);
-        setTemperature(data.current_observation.condition.temperature);
+        setTemperature(data && data.current_observation && data.current_observation.condition && data.current_observation.condition.temperature);
         setText(data.current_observation.condition.text);
         setWeather(data && data);
         // console.log(weather);
@@ -98,7 +73,7 @@ const Home = () => {
 
   return (
     <>
-      <div>
+      <div className='mainHeader'>
         <div className="header">
           <div>
             <img src={require("../../assets/logo_web.png")} alt="image" />
@@ -114,6 +89,7 @@ const Home = () => {
         </div>
 
       </div>
+
 
     </>
   )

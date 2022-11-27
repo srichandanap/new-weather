@@ -16,8 +16,19 @@ const Footer = () => {
                         <img src={require("../../assets/icon_temperature_info.png")} alt="image" className='footerImg' />
                     </div>
                     <div className="footerInfo">
-                        <div className="footerText">Min-Max</div>
-                        <div className="footerValue">75<span>&deg;</span>-90<span>&deg;</span></div>
+                        <div className="footerText">Min&nbsp;-&nbsp;Max</div>
+                        <div className="footerValue">
+                            {weatherData &&
+                                weatherData.current_observation &&
+                                weatherData.current_observation.condition &&
+                                weatherData.current_observation.condition.temperature - 3}
+                            &deg; -&nbsp;
+                            {weatherData &&
+                                weatherData.current_observation &&
+                                weatherData.current_observation.condition &&
+                                weatherData.current_observation.condition.temperature + 3}
+                            &deg;
+                        </div>
                     </div>
                 </div>
 

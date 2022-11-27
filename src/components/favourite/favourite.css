@@ -45,6 +45,7 @@
     letter-spacing: 1px;
     line-height: 15px;
     text-align: right;
+    cursor: pointer;
 }
 
 .favPlaceList {
@@ -67,6 +68,7 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+    min-width: 24%;
 }
 
 .place {
@@ -77,6 +79,7 @@
     font-weight: 500;
     letter-spacing: 1px;
     line-height: 19px;
+    min-width: 17%;
 }
 
 .condition {
