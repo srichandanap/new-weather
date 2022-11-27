@@ -1,0 +1,201 @@
+.favImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 65vh;
+    gap: 1rem
+}
+
+.text {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 21px;
+    text-align: center;
+}
+
+.favText {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0rem 2rem 0rem;
+    font-weight: 300;
+}
+
+.favTextLeft {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 15px;
+}
+.favPlaces {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 1rem 1rem;
+}
+.favTextRight {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 15px;
+    text-align: right;
+}
+
+.favPlaceList {
+    display: flex;
+    flex-direction: column;
+    height: 64vh;
+
+}
+
+.favPlaceItem {
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.placeTemp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.place {
+    /* color: #ffe539; */
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 19px;
+}
+
+.condition {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 21px;
+    font-weight: 300;
+}
+
+.temp {
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 38px;
+}
+
+.modalBlur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    border: 1px solid #979797;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    position: relative;
+    padding: 0.75rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 3.25rem 6rem;
+}
+
+.modalText {
+    color: #000000;
+    font-family: Roboto;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+
+.btnNo {
+    border-radius: 2px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: center;
+    padding: 0.5rem 3rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.btnYes {
+    background-color: #F76B1C;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0.5rem 3rem;
+    border: none;
+    outline: none;
+
+}
+
+.searchFavMobile {
+    display: none;
+}
+
+.favPlaceMobileItem {
+    display: none;
+}
+
+.modalMobileBlur {
+    display: none;
+}
+
+.cel{
+    height: 28px;
+    width: 17px;
+    font-weight: 300;
+    display: flex;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.celFlex{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+}

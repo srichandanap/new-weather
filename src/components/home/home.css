@@ -1,0 +1,85 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rec {
+    box-sizing: border-box;
+    padding: 0.75rem 0.75rem;
+    width: 20rem;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255 , 0.3);
+    color: #FFFFFF;
+}
+
+.rec::placeholder{
+  color: rgb(255, 255, 255, 0.9);
+  font-family: Roboto;
+  letter-spacing: 1px;
+  line-height: 19px;
+  font-weight: 300;
+
+}
+
+.search {
+    position: relative;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
+.header_mobile{
+    display: none;
+}
+
+.searchMobile{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    position: fixed;
+}
+
+.searchInputMobile{
+    position: relative;
+    display: flex;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    gap: 3rem;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+
+}
+
+.arrowMobile{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+}
+
+.searchBarMobile{
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.searchBarMobile::placeholder{
+    opacity: 0.3;
+    color: rgb(0, 0, 0);
+    font-family: Roboto;
+    font-size: 14px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+
+
+
+
+
+

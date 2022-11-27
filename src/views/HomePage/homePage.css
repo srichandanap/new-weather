@@ -1,0 +1,406 @@
+.homeContainer {
+    padding: 5% 10%;
+    height: 100%;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #5d52c7, #92428f);
+    background-repeat: no-repeat;
+}
+
+
+@media only screen and (max-width: 984px) {
+
+    .homeContainer {
+        padding: 3% 7%;
+
+    }
+
+    .footerItem {
+        gap: 0.5rem !important;
+    }
+
+}
+
+@media only screen and (max-width: 765px) {
+
+    .header {
+        display: none;
+    }
+
+    .header_mobile {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .menu {
+        width: 24px;
+        height: 24px;
+    }
+
+    .tabItems {
+        display: none !important;
+    }
+
+    .tabs_mobile {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        padding-top: 3rem !important;
+    }
+
+    .date {
+        color: rgb(255, 255, 255, 0.8) !important;
+        font-family: Roboto !important;
+        font-size: 13px !important;
+        letter-spacing: 2px !important;
+        line-height: 16px;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    .places {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem !important;
+        font-size: 18px !important;
+        font-weight: 600;
+        letter-spacing: 1px;
+        line-height: 21px !important;
+        padding-top: 3rem;
+    }
+
+    .image {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .favourite {
+        font-size: 13px !important;
+    }
+
+    .img {
+        height: 18px;
+        width: 18px;
+    }
+
+    .homeContainer {
+        padding: 0 !important;
+    }
+
+    .footer {
+        justify-content: unset !important;
+        background-color: rgb(255, 255, 255, 0.2) !important;
+        overflow-y: hidden !important;
+        /* margin-top: 9rem; */
+        padding: 2.3rem 0rem !important;
+
+    }
+
+    .footerItem {
+        padding-right: 2rem !important;
+        padding-left: 1rem !important;
+        min-width: fit-content;
+    }
+
+
+    /* img.img_menu_mobile {
+        height: 25px;
+        width: 29px;
+    }
+
+    img.img_logo_mobile {
+        height: 36px;
+        width: 147px;
+    }
+
+    img.img_search_mobile {
+        height: 23px;
+        width: 20px;
+    } */
+
+    .sideBar {
+        background-color: #FFFFFF;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 12rem;
+        position: fixed;
+    }
+
+    .tab_mobile {
+        color: #707070;
+        font-family: Roboto;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 36px;
+        text-decoration: none;
+
+    }
+
+    .tab_mobile {
+        color: black;
+    }
+
+    .mobileTabs {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem 0rem 0rem 2rem;
+    }
+
+    .searchFavMobile {
+        display: flex !important;
+        background-color: #FFFFFF !important;
+        padding: 1rem 2rem !important;
+        width: 100vw !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+
+    }
+
+    .favMobileLeft {
+        display: flex !important;
+        gap: 2rem !important;
+    }
+
+    .favMobileText {
+
+        color: #292F33;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+
+    }
+
+    .searchFavImageMobile {
+        width: 20px;
+        height: 20px;
+    }
+
+    .arrowFavMobile {
+        width: 20px;
+        height: 20px;
+    }
+
+    .favPlaceList {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .favText {
+        padding: 1rem 0rem 1.5rem 0rem !important;
+    }
+
+    .favPlaceMobile {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 2px!important;
+    }
+
+    .temp {
+        font-size: 18px !important;
+        display: flex!important;
+        align-items: center!important;
+    }
+
+    .condition {
+        font-size: 14px !important;
+    }
+
+    .placeImage {
+        height: 40px;
+    }
+
+    .placeTemp {
+        gap: 0.5rem !important;
+    }
+
+    .favImage {
+        height: 75vh;
+    }
+
+
+    .favPlaceItem {
+        display: none !important;
+
+    }
+
+
+    .favPlaceMobileItem {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255, 0.15);
+        padding: 1rem;
+    }
+
+    .placeMobile {
+        color: #FFE539;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 18px;
+    }
+
+    .favMobileDetails {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tempMobile {
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 21px;
+
+    }
+
+    .conditionMobile {
+        color: #FFFFFF;
+        font-family: Roboto;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 16px;
+        font-weight: 300;
+    }
+
+    .placeTempMobile {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .placeImageMobile {
+        height: 23px;
+        width: 22px;
+    }
+
+    .modalBlur {
+        display: none !important;
+    }
+
+    .modalMobile {
+        display: flex !important;
+        border: 1px solid #979797;
+        border-radius: 4px;
+        background-color: #FFFFFF;
+        position: relative;
+        padding: 0.75rem 2rem;
+        flex-direction: column !important;
+        justify-content: center !important;
+        gap: 2rem;
+        padding: 1.25rem 3rem;
+    }
+
+    .modalMobileBlur {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        background: rgba(0, 0, 0, 0.4) !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .modalTextMobile {
+        color: rgba(0, 0, 0, 0.54);
+        width: 12rem !important;
+        font-family: Roboto;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 24px;
+
+    }
+
+    .btnMobile {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #673AB7;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .buttonsMobile {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: flex-end !important;
+        cursor: pointer;
+        gap: 3rem !important;
+
+    }
+
+    .tempCount {
+        line-height: 61px !important;
+        font-size: 51px !important;
+    }
+
+    .sunnyImage {
+        line-height: 61px !important;
+        font-size: 52px !important;
+        border-bottom: unset !important;
+        padding-bottom: 5.6rem !important;
+        gap: 1rem !important;
+    }
+
+    .text {
+        font-weight: 300 !important;
+    }
+
+    
+.celMobile{
+    height: 28px;
+    width: 17px;
+    font-weight: 300;
+    display: flex;
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.celFlexMobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+}
+
+@media only screen and (max-width: 540px) {
+
+    img.img_menu_mobile {
+        height: auto;
+        width: auto;
+    }
+
+    img.img_logo_mobile {
+        height: auto;
+        width: auto;
+    }
+
+    img.img_search_mobile {
+        height: auto;
+        width: auto;
+    }
+
+}
